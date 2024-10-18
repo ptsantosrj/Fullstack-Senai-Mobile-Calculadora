@@ -6,12 +6,12 @@ import styles from '../styles/calculatorstyles';
 const CalculatorScreen = () => {
     const [input, setInput] = useState('');
     const [result, setResult] = useState(null);
-  
+
     const handlePress = (value) => {
       if (value === 'C') {
         setInput('');
         setResult(null);
-      } else if (value === '=') {
+     } else if (value === '=') {
         try {
           const evalResult = eval(input);
           setResult(evalResult);
